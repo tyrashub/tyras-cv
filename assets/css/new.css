@@ -1,0 +1,391 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: rgb(250, 216, 250);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: large;
+  color: rgb(146, 77, 146);
+}
+
+a:hover,
+li:hover {
+  color: rgb(198, 182, 255);
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/*==================== LAYOUT ====================*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*==================== HEADER ====================*/
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: plum;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 40px;
+  color: white;
+  background-color: plum;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: center;
+  background-color: plum;
+}
+
+.header nav ul li {
+  margin: 0 1rem;
+  background-color: plum;
+}
+
+.header nav ul li a {
+  font-size: var(--normal-font-size);
+  color: white;
+  background-color: plum;
+}
+
+.header nav ul li a:hover {
+  color: var(--first-color);
+}
+
+/*==================== HOME ====================*/
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-content img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  margin-top: 4rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--first-color);
+  color: #fff;
+  font-weight: var(--font-medium);
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--first-color-alt);
+}
+
+/*==================== ABOUT ====================*/
+.about {
+  background-color: plum;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+h2,
+h3 {
+  font-size: x-large;
+}
+
+.about p,
+.about h2,
+.portfolio h2,
+.portfolio p,
+.portfolio h3,
+.portfolio strong {
+  background-color: plum;
+}
+
+/*==================== SKILLS ====================*/
+.skills {
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+/*==================== QUALIFICATION ====================*/
+.qualification {
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.qual h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/*==================== PORTFOLIO ====================*/
+.portfolio,
+.about {
+  background-color: plum;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.portfolio img,
+.about img {
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/*==================== PROJECT IN MIND ====================*/
+.project {
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+/* ==================== SERVICES ====================
+.services {
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.service-item {
+  margin-bottom: var(--mb-2);
+} */
+
+/* ==================== TESTIMONIAL ====================
+.testimonial {
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+} */
+
+/* ==================== SOCIALS ====================*/
+
+.bottom-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50%;
+  border-radius: 0.5rem;
+  background-color: plum;
+  padding: 0.5rem 1rem;
+}
+
+.socials {
+  border-radius: 0.5rem;
+}
+
+/*==================== CONTACT ME ====================*/
+.contact,
+.social {
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin-bottom: 0.5rem;
+}
+
+.contact input,
+.contact textarea {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--scroll-bar-color);
+  border-radius: 0.25rem;
+  outline: 2px solid black;
+}
+
+h4 {
+  color: white;
+}
+
+.btn {
+  background-color: rgb(241, 207, 241);
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.contact button {
+  align-self: flex-start;
+  background-color: rgb(241, 207, 241);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: var(--first-color-alt);
+}
+
+/*==================== FOOTER ====================*/
+.footer {
+  background-color: var(--body-color);
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid var(--scroll-bar-color);
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer ul li {
+  margin: 0 1rem;
+}
+
+.footer ul li a {
+  color: var(--title-color);
+}
+
+/*==================== SCROLL UP ====================*/
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.scroll-top:hover {
+  background-color: var(--first-color-alt);
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices (Mobile) */
+@media screen and (max-width: 576px) {
+  .header nav ul {
+    flex-direction: column;
+  }
+
+  .header nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .home-content img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section {
+    padding: 1.5rem 0 3rem;
+  }
+}
+
+/* For medium devices (Tablets) */
+@media screen and (min-width: 577px) and (max-width: 968px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* For large devices (Desktops) */
+@media screen and (min-width: 969px) {
+  .header {
+    padding: 1rem 4rem;
+  }
+
+  .home-content img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .section {
+    padding: 2rem 0 4rem;
+  }
+}
