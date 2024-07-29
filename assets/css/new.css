@@ -139,7 +139,7 @@ img {
   height: 150px;
   object-fit: cover;
   margin-bottom: 0.5rem;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 .btn {
@@ -191,7 +191,7 @@ h3 {
 }
 
 .qual h3 {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -202,6 +202,7 @@ h3 {
   padding: 2rem;
   border-radius: 0.5rem;
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .portfolio img,
@@ -215,7 +216,6 @@ h3 {
   background-color: var(--container-color);
   padding: 2rem;
   border-radius: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 /* ==================== SERVICES ====================
